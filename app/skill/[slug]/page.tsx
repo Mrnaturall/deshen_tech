@@ -1,12 +1,11 @@
 // app/skill/[slug]/page.tsx
-
 import React from "react";
 import { notFound } from "next/navigation";
 
-interface SkillProps {
-  params: {
+interface PageProps {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 const BookingLinks = () => (
@@ -48,7 +47,7 @@ const skills = [
     description: (
       <>
         <p className="mb-4">
-          As a passionate software developer, I specialize in building robust and scalable web applications using modern technologies like JavaScript, React, Node.js, and MongoDB. I’ve worked on full-stack projects like e-commerce platforms, blogs, and portfolio dashboards—focusing on clean architecture, responsiveness, and user experience.
+          As a passionate software developer, I specialize in building robust and scalable web applications using modern technologies like JavaScript, React, Node.js, and MongoDB. I&apos;ve worked on full-stack projects like e-commerce platforms, blogs, and portfolio dashboards—focusing on clean architecture, responsiveness, and user experience.
         </p>
         <a
           href="https://almondfresh.vercel.app/"
@@ -104,8 +103,11 @@ const skills = [
   },
 ];
 
-export default function SkillDetails({ params }: SkillProps) {
-  const skill = skills.find((skill) => skill.slug === params.slug);
+export default async function SkillDetails({ params }: PageProps) {
+  // Await the params Promise
+  const { slug } = await params;
+  
+  const skill = skills.find((skill) => skill.slug === slug);
 
   if (!skill) {
     notFound();
@@ -119,4 +121,11 @@ export default function SkillDetails({ params }: SkillProps) {
       </div>
     </div>
   );
+}
+
+// Required for static generation of dynamic routes
+export async function generateStaticParams() {
+  return skills.map((skill) => ({
+    slug: skill.slug,
+  }));
 }
