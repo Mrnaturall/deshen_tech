@@ -26,13 +26,13 @@ export default async function SignUpPage(props: {
   }
 
   return (
-    <div className='w-full'>
-      <Card>
+    <div className='w-[300px] mx-auto pt-[30px] mb-8'>
+      <Card className='bg-red-50  border-0 shadow-lg'>
         <CardHeader>
           <CardTitle className='text-2xl'>Create account</CardTitle>
         </CardHeader>
-        <CardContent>
-          <SignUpForm />
+        <CardContent  >
+          <SignUpForm  />
         </CardContent>
       </Card>
     </div>

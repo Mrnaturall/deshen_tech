@@ -29,8 +29,8 @@ export default async function SignIn(props: {
   }
 
   return (
-    <div className="w-full">
-      <Card>
+    <div className="w-[300px] mx-auto pt-[30px] mb-8 ">
+      <Card className='bg-red-50  border-0 shadow-md'>
         <CardHeader>
           <CardTitle className="text-2xl">Sign In</CardTitle>
         </CardHeader>

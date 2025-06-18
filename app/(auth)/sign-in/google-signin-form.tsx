@@ -23,7 +23,7 @@ export function GoogleSignInForm() {
   }
 
   return (
-    <form action={SignInWithGoogle}>
+    <form action={SignInWithGoogle}  method="POST">
       <SignInButton />
     </form>
   )
