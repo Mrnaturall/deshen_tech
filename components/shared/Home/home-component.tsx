@@ -16,7 +16,7 @@ const HomeComponent = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#eeeee] to-[#d7242b] px-4 sm:px-6 lg:px-8  ">
+<div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#e02d2d] from-[0%] via-[#e02d2d] via-[60%] to-[#E87131] to-[100%] px-4 sm:px-6 lg:px-8">
       <div
         className={`transition-all duration-1000 ease-out ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -25,9 +25,9 @@ const HomeComponent = () => {
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 max-w-6xl mx-auto">
           {/* Text Content */}
           <div className="text-center lg:text-left flex-1 space-y-6">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight">
               Hello, I am{" "}
-              <span className="text-black block sm:inline">
+              <span className=" text-white  block sm:inline">
                 Ngozi Favour Nwachukwu
               </span>
             </h1>

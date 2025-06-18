@@ -98,13 +98,13 @@ const Footer = () => {
             
             {/* Social Icons Row for Mobile */}
             <div className="flex space-x-4 md:hidden">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-400 transition-colors duration-300">
+              <a href="https://www.instagram.com/deshentech/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-400 transition-colors duration-300">
                 <Instagram size={20} />
               </a>
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors duration-300">
                 <Facebook size={20} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300 transition-colors duration-300">
+              <a href="www.linkedin.com/in/favour-ngozi-6a72b2222" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300 transition-colors duration-300">
                 <Linkedin size={20} />
               </a>
               <a href="https://wa.me" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-colors duration-300">

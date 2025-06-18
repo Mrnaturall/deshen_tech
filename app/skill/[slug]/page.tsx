@@ -1,41 +1,45 @@
 // app/skill/[slug]/page.tsx
 import React from "react";
 import { notFound } from "next/navigation";
-
+import Link from "next/link";
 interface PageProps {
   params: Promise<{
     slug: string;
   }>;
 }
+import { FaWhatsapp, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const BookingLinks = () => (
   <div className="mt-8 text-center">
     <h2 className="text-xl font-semibold text-gray-800 mb-4">📩 Book a session</h2>
     <div className="flex flex-wrap justify-center gap-4">
-      <a
-        href="https://wa.me/2347012345678"
+      <Link
+        href="https://wa.me/2348069420489"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg shadow transition"
+        className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg shadow transition"
       >
-        Chat on WhatsApp
-      </a>
-      <a
+        <FaWhatsapp className="text-xl" />
+        WhatsApp
+      </Link>
+      <Link
         href="https://www.instagram.com/deshentech/"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg shadow transition"
+        className="flex items-center gap-2 bg-red-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg shadow transition"
       >
-        Chat on Instagram
-      </a>
-      <a
-        href="https://www.linkedin.com/in/your-profile/"
+        <FaInstagram className="text-xl" />
+        Instagram
+      </Link>
+      <Link
+        href="https://www.linkedin.com/in/favour-ngozi-6a72b2222"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-lg shadow transition"
+        className="flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-lg shadow transition"
       >
-        Chat on LinkedIn
-      </a>
+        <FaLinkedin className="text-xl" />
+        LinkedIn
+      </Link>
     </div>
   </div>
 );
@@ -46,16 +50,16 @@ const skills = [
     slug: "software-development",
     description: (
       <>
-        <p className="mb-4">
+        <p className="mb-4 text-start">
           As a passionate software developer, I specialize in building robust and scalable web applications using modern technologies like JavaScript, React, Node.js, and MongoDB. I&apos;ve worked on full-stack projects like e-commerce platforms, blogs, and portfolio dashboards—focusing on clean architecture, responsiveness, and user experience.
         </p>
         <a
           href="https://almondfresh.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-600 hover:text-blue-800 underline transition-colors"
+          className="text-blue-600 hover:text-blue-800  transition-colors"
         >
-          👉 View my projects
+          View my projects
         </a>
         <BookingLinks />
       </>
@@ -69,14 +73,14 @@ const skills = [
         <p className="mb-4">
           My graphic design journey blends creativity with strategic thinking. I create logos, business cards, posters, and engaging social media content using Adobe Illustrator, Photoshop, and Figma. I focus on crafting visual identities that communicate clearly and leave lasting impressions.
         </p>
-        <a
+        <Link 
           href="https://www.instagram.com/deshentech/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-600 hover:text-blue-800 underline transition-colors"
         >
           👉 See my designs
-        </a>
+        </Link>
         <BookingLinks />
       </>
     ),

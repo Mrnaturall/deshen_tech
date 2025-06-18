@@ -54,7 +54,7 @@ const SkillsIHave = () => {
 
               <Link
                 href={`/skill/${skill.slug}`}
-                className="mt-4 inline-block text-sm text-white bg-[#d71e24] hover:bg-red-500 px-3 py-1 rounded w-fit"
+                className="mt-4 inline-block text-sm text-white bg-[#E87131] hover:bg-red-500 px-3 py-1 rounded w-fit"
               >
                 Show More
               </Link>
