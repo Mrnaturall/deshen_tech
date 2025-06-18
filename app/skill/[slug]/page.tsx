@@ -51,7 +51,7 @@ const skills = [
     description: (
       <>
         <p className="mb-4 text-start">
-          As a passionate software developer, I specialize in building robust and scalable web applications using modern technologies like JavaScript, React, Node.js, and MongoDB. I&apos;ve worked on full-stack projects like e-commerce platforms, blogs, and portfolio dashboards—focusing on clean architecture, responsiveness, and user experience.
+          As a passionate software developer, I specialize in building robust and scalable web applications using modern technologies like html, tailwindcss, typescript, Next.js, Node.js, and MongoDB. I&apos;ve worked on full-stack projects like e-commerce platforms, blogs, and portfolio dashboards—focusing on clean architecture, responsiveness, and user experience.
         </p>
         <a
           href="https://almondfresh.vercel.app/"

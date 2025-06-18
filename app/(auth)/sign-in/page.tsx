@@ -41,11 +41,12 @@ export default async function SignIn(props: {
         </CardContent>
       </Card>
       <SeparatorWithOr>New to {APP_NAME}?</SeparatorWithOr>
-      <div className="mt-4">
-        <GoogleSignInForm />
+      <div className="mt-4 mb-2 text-deshenred">
+        
+        <GoogleSignInForm  />
       </div>
       <Link href={`/sign-up?callbackUrl=${encodeURIComponent(callbackUrl)}`}>
-        <Button className="w-full" variant="outline">
+        <Button className="w-full bg-deshenred text-white outline-0" variant="outline">
           Create your {APP_NAME} account
         </Button>
       </Link>
