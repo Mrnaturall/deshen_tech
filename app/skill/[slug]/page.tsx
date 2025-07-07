@@ -10,8 +10,8 @@ interface PageProps {
 import { FaWhatsapp, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const BookingLinks = () => (
-  <div className="mt-8 text-center">
-    <h2 className="text-xl font-semibold text-gray-800 mb-4">📩 Book a session</h2>
+  <div className="mt-8 text-center ">
+    <h2 className="text-xl font-semibold text-gray-800 mb-4"> Book a session</h2>
     <div className="flex flex-wrap justify-center gap-4">
       <Link
         href="https://wa.me/2348069420489"
@@ -20,7 +20,7 @@ const BookingLinks = () => (
         className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg shadow transition"
       >
         <FaWhatsapp className="text-xl" />
-        WhatsApp
+      
       </Link>
       <Link
         href="https://www.instagram.com/deshentech/"
@@ -29,7 +29,7 @@ const BookingLinks = () => (
         className="flex items-center gap-2 bg-red-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg shadow transition"
       >
         <FaInstagram className="text-xl" />
-        Instagram
+       
       </Link>
       <Link
         href="https://www.linkedin.com/in/favour-ngozi-6a72b2222"
@@ -38,7 +38,7 @@ const BookingLinks = () => (
         className="flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-lg shadow transition"
       >
         <FaLinkedin className="text-xl" />
-        LinkedIn
+     
       </Link>
     </div>
   </div>
@@ -50,7 +50,7 @@ const skills = [
     slug: "software-development",
     description: (
       <>
-        <p className="mb-4 text-start">
+        <p className="mb-4 text-center">
           As a passionate software developer, I specialize in building robust and scalable web applications using modern technologies like html, tailwindcss, typescript, Next.js, Node.js, and MongoDB. I&apos;ve worked on full-stack projects like e-commerce platforms, blogs, and portfolio dashboards—focusing on clean architecture, responsiveness, and user experience.
         </p>
         <a
@@ -70,7 +70,7 @@ const skills = [
     slug: "graphic-design",
     description: (
       <>
-        <p className="mb-4">
+        <p className="mb-4 text-center">
           My graphic design journey blends creativity with strategic thinking. I create logos, business cards, posters, and engaging social media content using Adobe Illustrator, Photoshop, and Figma. I focus on crafting visual identities that communicate clearly and leave lasting impressions.
         </p>
         <Link 
@@ -90,7 +90,7 @@ const skills = [
     slug: "motion-designs",
     description: (
       <>
-        <p className="mb-4">
+        <p className="mb-4 text-center">
           I breathe life into visuals with motion graphics. Using After Effects and Premiere Pro, I create logo reveals, explainer videos, UI animations, and social content. Each piece is designed to enhance storytelling, grab attention, and drive interaction.
         </p>
         <a
@@ -118,7 +118,7 @@ export default async function SkillDetails({ params }: PageProps) {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-6">
+    <div className="min-h-screen flex items-center justify-center p-6 bg-red-50">
       <div className="bg-white/90 backdrop-blur-md rounded-2xl shadow-2xl p-10 max-w-3xl w-full text-center animate-fadeInUp">
         <h1 className="text-4xl font-bold text-red-500 mb-6">{skill.name}</h1>
         <div className="text-lg text-gray-700 leading-relaxed">{skill.description}</div>

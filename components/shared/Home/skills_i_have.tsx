@@ -46,7 +46,7 @@ const SkillsIHave = () => {
               />
 
               <div>
-                <h2 className="text-lg font-bold mb-2">{skill.name}</h2>
+                <h2 className="text-lg font-bold mb-2 text-red-700">{skill.name}</h2>
                 <p className="text-sm text-gray-600">
                   {skill.description.slice(0, 150)}...
                 </p>
@@ -54,7 +54,7 @@ const SkillsIHave = () => {
 
               <Link
                 href={`/skill/${skill.slug}`}
-                className="mt-4 inline-block text-sm text-white bg-[#E87131] hover:bg-red-500 px-3 py-1 rounded w-fit"
+                className="mt-4 inline-block text-sm text-white bg-red-500 hover:bg-red-500 px-3 py-1 rounded w-fit"
               >
                 Show More
               </Link>

@@ -1,4 +1,4 @@
-"use client";
+  "use client";
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
@@ -16,7 +16,7 @@ const HomeComponent = () => {
   }, []);
 
   return (
-<div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#e02d2d] from-[0%] via-[#e02d2d] via-[60%] to-[#E87131] to-[100%] px-4 sm:px-6 lg:px-8">
+<div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#ff0505] from-[0%] via-[#e02d2d] via-[80%] to-[#E87131] to-[100%] px-4 sm:px-6 lg:px-8">
       <div
         className={`transition-all duration-1000 ease-out ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -38,7 +38,7 @@ const HomeComponent = () => {
             <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden shadow-2xl border-4 border-white bg-gradient-to-br from-[#fffff] to-[#f84e50] flex items-center justify-center ">
               {!imageError ? (
                 <Image
-                  src="/images/profile.png"
+                  src="/images/profile.jpg"
                   alt="Ngozi Favour Nwachukwu"
                   fill
                   className="object-cover"
